@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="patient_text_large" >80sp</dimen>
+    <dimen name="patient_text_mid" >40sp</dimen>
+    <dimen name="patient_text_min" >20sp</dimen>
+    <dimen name="patient_text_warn">50sp</dimen>
+    <dimen name="patient_text_expand">30sp</dimen>
+</resources>

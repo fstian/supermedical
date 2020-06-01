@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/patient_rl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#00a1f0"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.3">
+
+        <TextView
+            android:id="@+id/patient_tv_bedNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/patient_text_large"
+            tools:text="40"/>
+
+        <TextView
+            android:id="@+id/patient_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patient_tv_bedNum"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/patient_text_mid"
+            tools:text="徐书州"/>
+
+        <LinearLayout
+            android:id="@+id/patient_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patient_tv_name"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_sex"
+                android:textSize="@dimen/patient_text_min"/>
+
+            <TextView
+                android:id="@+id/patient_tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/patient_text_min"
+                tools:text="男"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/patient_age"
+                android:textSize="@dimen/patient_text_min"/>
+
+            <TextView
+                android:id="@+id/patient_tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/patient_text_min"
+                tools:text="18"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/patient_tv_insurance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patient_ll"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/patient_text_min"
+            tools:text="新农合"/>
+
+
+        <TextView
+            android:id="@+id/patient_tv_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/patient_tv_insurance"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/patient_text_min"
+            tools:text="未来智慧医院"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/patient_fl_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintLeft_toRightOf="@id/patient_rl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/patient_rl"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/patient_fl_container"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/patient_tv_nurseLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:background="#ff0"
+                android:gravity="center"
+                android:text="二级护理"
+                android:textSize="@dimen/patient_text_expand"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="#f398f7"
+                android:gravity="center"
+                android:text="普食"
+                android:textSize="@dimen/patient_text_expand"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="费用"
+                android:textSize="@dimen/patient_text_expand"/>
+
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="化验"
+                android:textSize="@dimen/patient_text_expand"/>
+
+            <TextView
+                android:paddingRight="20dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/patient_tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="通知"
+                android:textSize="@dimen/patient_text_expand"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

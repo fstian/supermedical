@@ -13,17 +13,15 @@ public class MyClass {
 
     public static void main(String[] args){
 
-
+        int count=0;
         try {
             ServerSocket serverSocket = new ServerSocket(17878);
-            Socket accept = serverSocket.accept();
 
-            new Thread(new ReceiveRunable(accept)).start();
-
-
-
-
-
+            while (true){
+                count++;
+                Socket accept = serverSocket.accept();
+                new Thread(new ReceiveRunable(accept),"threadname"+count).start();
+            }
 
         } catch (IOException e) {
             e.printStackTrace();

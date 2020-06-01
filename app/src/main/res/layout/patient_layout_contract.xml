@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/layout_tv_allergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="青霉素"
+        android:textColor="@color/patient_text_warn"
+        android:textSize="@dimen/patient_text_warn"/>
+
+    <TextView
+        android:id="@+id/layout_tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="防跌倒,防坠床"
+        android:textColor="@color/patient_text_warn"
+        android:textSize="@dimen/patient_text_warn"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/layout_tv_hospital_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_in_hospital_code"
+            android:textSize="@dimen/patient_text_min"/>
+
+        <TextView
+            android:id="@+id/layout_tv_hospital_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/patient_text_min"/>
+
+        <TextView
+            android:id="@+id/layout_tv_hospital_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/patient_in_hospital_time"
+            android:textSize="@dimen/patient_text_min"/>
+
+        <TextView
+            android:id="@+id/layout_tv_hospital_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/patient_text_min"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/layout_tv_hospital_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/patient_in_hospital_doctor"
+            android:textSize="@dimen/patient_text_mid"/>
+
+        <TextView
+            android:id="@+id/layout_tv_hospital_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/layout_tv_hospital_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/patient_in_hospital_nurse"
+            android:textSize="@dimen/patient_text_min"/>
+
+        <TextView
+            android:textSize="@dimen/patient_text_min"
+            android:id="@+id/layout_tv_hospital_nurse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import butterknife.ButterKnife;
 
 public abstract class BaseActivity extends AppCompatActivity {
-    public final String TAG=BaseActivity.class.getName();
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         afterViews();
     }
 
-    private void beforeViews() {
+    protected void beforeViews() {
     }
 
     protected  void afterViews(){

@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">supermedical</string>
+    <string name="app_name">witted</string>
+    <string name="patient_sex">性别 :</string>
+    <string name="patient_age">年龄 :</string>
+    <string name="patient_in_hospital_code">住院号码 :</string>
+    <string name="patient_in_hospital_time">入院时间 :</string>
+    <string name="patient_in_hospital_doctor">医生 :</string>
+    <string name="patient_in_hospital_nurse">护士 :</string>
 </resources>

@@ -26,7 +26,7 @@ public class LoginActivity extends BaseActivity {
     protected void afterViews() {
 
         ViewModelProvider viewModelProvider = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory());
-//
+
         ServiceConnectedViewModel serviceConnectedViewModel = viewModelProvider.get(ServiceConnectedViewModel.class);
 
         TcpConnectedViewModel tcpConnectedViewModel = viewModelProvider.get(TcpConnectedViewModel.class);

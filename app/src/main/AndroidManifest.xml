@@ -3,6 +3,8 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.witted">
 
+
+    <uses-feature android:name="telpo.software.telephony"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 
@@ -16,7 +18,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="com.witted.activity.PatientActivity"
+            android:name="com.witted.MainActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -28,9 +30,18 @@
 
         <service android:name=".service.AppService"/>
 
+        <service android:name=".service.NettyService"/>
+
         <receiver android:name=".receiver.BootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".receiver.DemoReceiver" >
+            <intent-filter >
+                <action android:name="telpo.intent.action.HANDLE_PLUG"/>
+                <action android:name="telpo.intent.action.HANDSFREE_KEY"/>
             </intent-filter>
         </receiver>
 
